@@ -77,6 +77,11 @@ $(call inherit-product, device/google/marlin/common/common64.mk)
 PRODUCT_PACKAGES += libGLES_android
 PRODUCT_PACKAGES += SSRestartDetector
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat64.enabled=true \
+    ro.sys.fw.dex2oat_thread_count=8
+
 # graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
