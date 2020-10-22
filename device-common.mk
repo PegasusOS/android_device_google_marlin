@@ -35,6 +35,7 @@ VENDOR_SECURITY_PATCH := "2019-09-05"
 PRODUCT_SOONG_NAMESPACES += \
     device/google/marlin \
     vendor/google/camera \
+    hardware/google/interfaces \
     hardware/google/pixel
 
 PRODUCT_COPY_FILES += \
