@@ -1,5 +1,8 @@
 # Common board config for marlin, sailfish
 
+# Broken Duplication Rules
+BUILD_BROKEN_DUP_RULES := true
+
 # Kernel
 #TARGET_PREBUILT_KERNEL := device/google/marlin-kernel/Image.lz4-dtb
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
