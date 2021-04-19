@@ -627,7 +627,8 @@ PRODUCT_COPY_FILES += \
 
 # Privileged permissions whitelist
 PRODUCT_COPY_FILES += \
-    device/google/marlin/permissions/privapp-permissions-marlin.xml:system/etc/permissions/privapp-permissions-marlin.xml
+    device/google/marlin/permissions/privapp-permissions-marlin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-marlin.xml \
+    device/google/marlin/permissions/privapp-permissions-ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-ims.xml
 
 PRODUCT_PACKAGES += \
     com.android.vndk.current \
