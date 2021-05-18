@@ -28,6 +28,12 @@ PRODUCT_MODEL := Pixel
 PRODUCT_MANUFACTURER := Google
 #PRODUCT_RESTRICT_VENDOR_FILES := true
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=sailfish \
+    PRIVATE_BUILD_DESC="sailfish-user 8.1.0 OPM1.171019.021 4565141 release-keys"
+
+BUILD_FINGERPRINT := google/sailfish/sailfish:8.1.0/OPM1.171019.021/4565141:user/release-keys
+
 PRODUCT_COPY_FILES += device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.sailfish
 
 $(call inherit-product, vendor/pegasus/config/common.mk)
