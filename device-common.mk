@@ -65,6 +65,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, device/google/marlin/common/common64.mk)
 
+PRODUCT_PACKAGES += GoogleCameraMod
+
 #Android EGL implementation
 PRODUCT_PACKAGES += libGLES_android
 PRODUCT_PACKAGES += SSRestartDetector
